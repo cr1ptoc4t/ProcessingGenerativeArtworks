@@ -54,3 +54,10 @@ void edificio(float x, float y, float w, float h, float h2, int n, int c1, int c
   }
 
 }
+
+ void keyPressed() {
+   if(key=='1'){
+     noLoop();
+   }
+  
+}
