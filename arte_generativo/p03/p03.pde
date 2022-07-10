@@ -13,7 +13,11 @@ void setup(){
 void draw(){
     background(0);
     noFill();
-    createArc(width/2, height/2, color(199, 130, 220));    
+    // createArc(0,0, color(199, 130, 220));
+    // createArc(width,0, color(199, 130, 220));
+    // createArc(0,height, color(199, 130, 220));
+    // createArc(width,height, color(199, 130, 220));
+    createArc(width/2, height/2, color(199, 130, 220)); 
 }
 
 void createArc(float x, float y, color c){
@@ -25,6 +29,6 @@ void createArc(float x, float y, color c){
         arc(x, y,  9+i , 10+i, -PI+i+z, -HALF_PI+i+z);        
     }
     delay(10);
-    z+=10;
-
+    z+=50;
+    h1-=3; h2-=3; h3-=3;
 }
