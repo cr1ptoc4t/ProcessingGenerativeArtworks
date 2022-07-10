@@ -1,5 +1,5 @@
 /*
-Classe Puntuació que té correspondència possicional amb BarallaFitxes.
+Classe Puntuacio que té correspondència possicional amb BarallaFitxes.
 Nom: Bernat Parera Servera
  */
 package treball_final_scrabble;
@@ -23,7 +23,7 @@ public class PuntuacioFitxes {
         int contador = 0;
         //variable index per treballar amb l'array puntuacio.
         int indice = 0;
-        //declaració linea
+        //declaracio linea
         Linea linea = new Linea();
         //lectura del fitxer fitxes.txt
         LineaFitxersLectura fitxer;
@@ -36,9 +36,9 @@ public class PuntuacioFitxes {
                 //ús del metode nombreFitxes per trobar la quantitat de punts de 
                 //cada lletra posar.
                 contador = linea.nombreFitxes();
-                //punts es el valor de cada fitxa dn quant a puntuació
+                //punts es el valor de cada fitxa dn quant a puntuacio
                 int punts = linea.trobarPuntuacio();
-                //colocació a l'array els punts.
+                //colocacio a l'array els punts.
                 for (int i = 0; i < contador; i++) {
                     puntuacio[indice] = punts;
                     indice++;
@@ -48,7 +48,7 @@ public class PuntuacioFitxes {
         }
         fitxer.tancament();
     }
-    //metode que torna la puntuació de l'index introduit per parametre.
+    //metode que torna la puntuacio de l'index introduit per parametre.
     public int puntuacioPosicioIndex(int index){
         return puntuacio[index];
     }

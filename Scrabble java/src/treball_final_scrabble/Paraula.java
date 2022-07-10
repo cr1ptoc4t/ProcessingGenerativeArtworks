@@ -5,7 +5,7 @@ Nom: Bernat Parera Servera
 package treball_final_scrabble;
 public class Paraula {
     //declaracio dels atributs de classe que descriuen l'estat dels objectes paraula
-    //declaracio del nombre màxim de caracters per posar una limitació
+    //declaracio del nombre màxim de caracters per posar una limitacio
      private static final int MAXIM_NOMBRE_CARACTERS=20;
     //declaracio d'atribut de classe que representa la final d'una sequencia de caracters
      private static final char FINAL_SEQUENCIA='.';
@@ -24,7 +24,7 @@ public class Paraula {
      
      //metode constructor
      public Paraula(){
-         //inicialització de nombre de caracters a 0
+         //inicialitzacio de nombre de caracters a 0
          nombreCaracters=0;
      }
      private static void cercarParaula() {

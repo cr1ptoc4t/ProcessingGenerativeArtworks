@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class Scrabble {
 
-    //declaració metode main
+    //declaracio metode main
     public static void main(String[] args) throws Exception {
 
         new Scrabble().metodePrincipal();
@@ -16,13 +16,13 @@ public class Scrabble {
     //declaracio variable eleccio per el menu
     private int eleccio;
 
-    //Declaració metodePrincipal
+    //Declaracio metodePrincipal
     private void metodePrincipal() throws Exception {
         System.out.println("Benvingut al joc Scrabble.");
         while (eleccio != 4) {
-            //MENÚ PER TRIAR I ASSIGNACIÓ 
+            //MENÚ PER TRIAR I ASSIGNACIo 
             menu();
-            //Creació switch per 
+            //Creacio switch per 
             switch (eleccio) {
                 //Executa la partida
                 case 1:
@@ -46,9 +46,9 @@ public class Scrabble {
         }
     }
 
-    //Creació metode menu que retorna l'leccio
+    //Creacio metode menu que retorna l'leccio
     private int menu() {
-        //Declaració variable eleccio per tirar la opció
+        //Declaracio variable eleccio per tirar la opcio
         //Donar la benvinguda al joc i donar les opcions
         System.out.println("Seleccioni que vol fer:\n"
                 + "#1.Jugar una partida standard.\n"
@@ -101,7 +101,7 @@ public class Scrabble {
         while (nombreTorns > 0) {
             //assignament de les fitxes, cada pic que comenci el while s'assignaràn 
             //un altre pic
-            taulerFitxes.assignacióFitxes();
+            taulerFitxes.assignacioFitxes();
             //mostrar per pantalla el tauler del torn nombre indexTorns
             System.out.println("Aquest es el teu tauler per el torn nombre " + indexTorns);
             //metode per mostrar per pantalla el taulerFitxes
@@ -168,7 +168,7 @@ public class Scrabble {
             }
             //ús del metode estaAlTauler de la classe taulerFitxes per verificar que tots
             //els caracters de paraulaIntroduida estan al diccionari i si està al diccionari
-            //troba la puntuació que ha aconseguit l'usuari.
+            //troba la puntuacio que ha aconseguit l'usuari.
             if ((taulerFitxes.estaAlTauler(paraulaIntroduida)) && (estaAlDiccionari)) {
                 puntuacio = trobarPuntuacioParaula(paraulaIntroduida, puntuacio);
             } 
@@ -271,7 +271,7 @@ public class Scrabble {
         }
 
     }
-//aquest mode creará paraules aleatòries i triará la que tengui més puntuació
+//aquest mode creará paraules aleatòries i triará la que tengui més puntuacio
 
     private void modeSimuladorSenzill(int nombreParaules) throws Exception {
         //declaracio paraula per guardar la paraula de més puntuacio.
@@ -283,8 +283,8 @@ public class Scrabble {
         int puntuacio = 0;
         //declaracio variable taulerFitxes de la classe TaulerFitxes
         TaulerFitxes taulerFitxes = new TaulerFitxes();
-        //assignació d'un tauler al simulador
-        taulerFitxes.assignacióFitxes();
+        //assignacio d'un tauler al simulador
+        taulerFitxes.assignacioFitxes();
         //declaracio variable de la classe Random per generar nombress
         Random aleatori = new Random();
         //delcaracio nombre enter per assignar-li el valor aleatori
@@ -299,7 +299,7 @@ public class Scrabble {
             for (int k = 0; k < verificacioTauler.length; k++) {
                 verificacioTauler[k] = false;
             }
-            //assignació d'un valor entre [1,11] per saber la grandària de la paraula que crearà
+            //assignacio d'un valor entre [1,11] per saber la grandària de la paraula que crearà
             //ho faig d'aquesta manera ja que aleatori.nextInt(11) crea un nombre aleatori a l'interval
             //[0,10], que realment és l'interval [1,11] per la paraula
             nombre = aleatori.nextInt(11);
@@ -309,7 +309,7 @@ public class Scrabble {
             Paraula paraula = new Paraula();
             //bucle per crear la paraula aleatoria, si index no es menor que nombre
             //pero si es igual a 0 també ha d'entrar ja que estariem xerrant 
-            //d'una paraula d'un caracter de longitud (posició 0)
+            //d'una paraula d'un caracter de longitud (posicio 0)
             while ((index < nombre) || (index == 0)) {
                 //assignament a nombreAleatori d'un nombre aleatori en el rang[0,nombre]
                 nombreAleatori = aleatori.nextInt(verificacioTauler.length);
@@ -342,7 +342,7 @@ public class Scrabble {
                 puntuacioParaula = trobarPuntuacioParaula(paraula, puntuacioParaula);
             }
             //si la puntuacioParaula>puntuacio, puntuacio ha de ser puntuacioParaula 
-            //ja que aquesta paraula seria la paraula amb més puntuació
+            //ja que aquesta paraula seria la paraula amb més puntuacio
             if (puntuacioParaula > puntuacio) {
                 puntuacio = puntuacioParaula;
                 paraulaDeMesPuntuacio = paraula;
@@ -364,8 +364,8 @@ public class Scrabble {
         int puntuacioTotal = 0;
         //declaracio variable taulerFitxes de la classe TaulerFitxes
         TaulerFitxes taulerFitxes = new TaulerFitxes();
-        //assignació d'un tauler al simulador
-        taulerFitxes.assignacióFitxes();
+        //assignacio d'un tauler al simulador
+        taulerFitxes.assignacioFitxes();
         //declaracio paraula per indicar quina és la paraula de més puntuacio
         Paraula paraulaMesPuntuacio = new Paraula();
         ParaulaFitxerLectura diccionari;

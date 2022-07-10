@@ -12,7 +12,7 @@ public class Linea {
     private static final int MAXIM = 250;
     //Atribut de classe que representa el caracter espai
      private static final char ESPAI=' ';
-    //declaració atribut de classe que representa el codi del caracter TAB
+    //declaracio atribut de classe que representa el codi del caracter TAB
     private static final int TAB = (int) '	';
     //Atribut d'objecte que representa un array de caracters per enmagatzemar la linea.
     private char[] caracters = new char[MAXIM];
@@ -91,12 +91,12 @@ public class Linea {
         }
         //variable per retornar i emmagatzemar el nombre de fitxes a repartir
         int nombreFitxes = 0;
-        //si no hi ha res a la posició 1 de l'array vol dir que el nombre es d'un digit
-        //i assignam nombre fitxes l'array de posició 0.
+        //si no hi ha res a la posicio 1 de l'array vol dir que el nombre es d'un digit
+        //i assignam nombre fitxes l'array de posicio 0.
         if (array[1] == null) {
             nombreFitxes = array[0];
-            //en canvi si hi ha un digit a la posició 1 vol dir que el nombre està format
-            //per dos digits ido hem de multiplicar el de la posició 0 per 10 ja que es 
+            //en canvi si hi ha un digit a la posicio 1 vol dir que el nombre està format
+            //per dos digits ido hem de multiplicar el de la posicio 0 per 10 ja que es 
             //tracten de decenes i sumar-li el de la posicio 1 sense multiplicar per cap nombre
         } else {
             nombreFitxes = array[0] * 10;
@@ -125,14 +125,14 @@ public class Linea {
         }
         //variable per retornar i emmagatzemar el la puntuacio
         int punts = 0;
-        //si no hi ha res a la posició 1 de l'array vol dir que el nombre es d'un digit
-        //i assignam nombre fitxes l'array de posició 0.
+        //si no hi ha res a la posicio 1 de l'array vol dir que el nombre es d'un digit
+        //i assignam nombre fitxes l'array de posicio 0.
         if (array[1] == null) {
             punts = array[0];
             
         } 
-        //en canvi si hi ha un digit a la posició 1 vol dir que el nombre està format
-        //per dos digits ido hem de multiplicar el de la posició 0 per 10 ja que es 
+        //en canvi si hi ha un digit a la posicio 1 vol dir que el nombre està format
+        //per dos digits ido hem de multiplicar el de la posicio 0 per 10 ja que es 
         //tracten de decenes i sumar-li el de la posicio 1 sense multiplicar per cap nombre
         else {
             punts = array[0] * 10;
@@ -219,7 +219,7 @@ public class Linea {
     }
         //else amb el retorn que indica que la puntuacio ha estat negativa.
         else{
-           char[] respostaNegativa = "La puntuació ha estat negativa.".toCharArray();
+           char[] respostaNegativa = "La puntuacio ha estat negativa.".toCharArray();
            return respostaNegativa;
         }
         //al cas que nombre>0 retornara arrayNombres.

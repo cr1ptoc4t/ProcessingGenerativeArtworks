@@ -8,9 +8,9 @@ import java.util.Random;
 
 public class TaulerFitxes {
 
-    //Declaració d'atribut de classe del nombre de fitxes que donarem cada torn
+    //Declaracio d'atribut de classe del nombre de fitxes que donarem cada torn
     private static int NOMBRE_FITXES=11;
-    //Declaració d'atribut d'objecte que és el tauler de lletreas
+    //Declaracio d'atribut d'objecte que és el tauler de lletreas
     private char[] Fitxes = new char[NOMBRE_FITXES];
 
     //Metode constructor buit
@@ -18,7 +18,7 @@ public class TaulerFitxes {
        
     }
     //Metode assignacioFitxes per assignar un tauler a l'usuari o al simulador
-    public void assignacióFitxes() throws Exception {
+    public void assignacioFitxes() throws Exception {
         //baralla de la classe BarallaFitxes per crear el tauler
         BarallaFitxes baralla = new BarallaFitxes();
         //gerear la baralla

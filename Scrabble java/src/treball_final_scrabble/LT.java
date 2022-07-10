@@ -21,15 +21,15 @@ import java.io.UnsupportedEncodingException;
  *      El darrer caràcter que es pot llegir és el \n.
  *      Després d'això espera una nova línia de text.
  * 
- *  - LT.readDouble(): lectura de nombres reals (precisió doble)
- *  - LT.readFloat(): lectura de nombres reals (precisió simple)
+ *  - LT.readDouble(): lectura de nombres reals (precisio doble)
+ *  - LT.readFloat(): lectura de nombres reals (precisio simple)
  *  - LT.readInt(): lectura de nombres enters (32 bits)
  *  - LT.readLong(): lectura de nombres enters (64 bits)
  *      Llegeix els caràcters de la línia actual
  *      (de la resta de la línia si s'ha consumit parcialment amb readChar)
  *      i els retorna en el format numèric desitjat.
  * 
- *  - LT.skipLine(): es bóta una línia
+ *  - LT.skipLine(): es bota una línia
  *      Llegeix els caràcters de la línia actual
  *      (de la resta de la línia si s'ha consumit parcialment amb readChar)
  *      i els ignora.
@@ -39,34 +39,34 @@ import java.io.UnsupportedEncodingException;
  *      (de la resta de la línia si s'ha consumit parcialment amb readChar)
  *      i els retorna un String.
  * 
- * __/Configuració\_____________________________________________________________
- *  - setup(): (re)configuració estàndard
+ * __/Configuracio\_____________________________________________________________
+ *  - setup(): (re)configuracio estàndard
  *      Es fa servir automàticament si no s'ha configurat.
  *      Hauria de funcionar correctament sempre excepte en els següents casos.
  * 
- *  - setupWindowsCmd(): (re)configuració pel terminal de Windows
- *      Estableix la codificació necessària per llegir correctament des del
+ *  - setupWindowsCmd(): (re)configuracio pel terminal de Windows
+ *      Estableix la codificacio necessària per llegir correctament des del
  *      cmd de Windows.
  * 
- *  - setupWindowsNetbeans(): (re)configuració per Netbeans a Windows
- *      Estableix la codificació necessària per llegir correctament des del
+ *  - setupWindowsNetbeans(): (re)configuracio per Netbeans a Windows
+ *      Estableix la codificacio necessària per llegir correctament des del
  *      terminal integrat a Netbeans executat a Windows.
  * 
  * _/Historial de versions\_____________________________________________________
- * versió 2.2:
+ * versio 2.2:
  *  - Mètode readLong.
  *  - Privatitzat read.
  *  - Afegit aquest manual d'ús.
  * 
- * versió 2.1:
+ * versio 2.1:
  *  - Afegit suport per a codificacions de caràcters.
  *  - Afegit '\n' en omplir el buffer, respectant la lectura de línies i nombres.
  * 
- * versió 2.0:
+ * versio 2.0:
  *  - Reescriptura de la classe.
  *  - Lectura de caràcters successius en una mateixa línia.
  * 
- * @author Els professors de l'assignatura 22393 - Programació - Informàtica I
+ * @author Els professors de l'assignatura 22393 - Programacio - Informàtica I
  * @version 2.2
  */
 public class LT {
@@ -82,7 +82,7 @@ public class LT {
     private static boolean setup = false;
     
     /**
-     * Configura l'encoding dels caràcters amb la codificació per defecte.
+     * Configura l'encoding dels caràcters amb la codificacio per defecte.
      * Hauria de funcionar bé, en teoria, excepte en els casos següents.
      */
     public static void setup() {
@@ -207,7 +207,7 @@ public class LT {
     
     /**
      * Llegeix una línia de text i la converteix en un nombre en punt flotant de
-     * doble precisió.
+     * doble precisio.
      * Una línia acaba amb un line feed ('\n'), carriage return ('\r'), o un
      * carriage return seguit immediatament d'un line feed.
      * 

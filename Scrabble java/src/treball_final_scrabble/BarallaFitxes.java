@@ -5,9 +5,9 @@ Nom: Bernat Parera Servera.
 package treball_final_scrabble;
 
 public class BarallaFitxes {
-    //Declaració d'atribut de classe del nombre de fitxes que tendrà la baralla
+    //Declaracio d'atribut de classe del nombre de fitxes que tendrà la baralla
     private static final int NOMBRE_FITXES = 104;
-    //Declaració d'atribut d'objecte que és el tauler de lletreas
+    //Declaracio d'atribut d'objecte que és el tauler de lletreas
     private char[] baralla;
     //metode constructor
     public BarallaFitxes() throws Exception {
@@ -41,11 +41,11 @@ public class BarallaFitxes {
         }
         fitxer.tancament();
     }
-    //metode per trobar la fitxa de la baralla en posoció index.
+    //metode per trobar la fitxa de la baralla en posocio index.
     public char trobarFitxa(int nombre){
         return baralla[nombre];
     }
-    //metode que cerca la posició a la baralla d'un caracter introduit per paràmetre
+    //metode que cerca la posicio a la baralla d'un caracter introduit per paràmetre
     public int cercarPosicioBaralla(char lletra){
         int index=0;
         for (int i = 0; i < NOMBRE_FITXES; i++) {
@@ -53,7 +53,7 @@ public class BarallaFitxes {
                 index= i;
             }
         }
-        //retorn de variable index la qual correspon a la posició on hi ha el caracter
+        //retorn de variable index la qual correspon a la posicio on hi ha el caracter
         //del paraàmetre
         return index;
     }

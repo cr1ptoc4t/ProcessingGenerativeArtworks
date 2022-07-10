@@ -9,17 +9,17 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 
 public class ParaulaFitxerEscritura {
-    //DECLARACIÓN ATRIBUTOS
-    //declaración atributo de clase constante entero que representa el código
+    //DECLARACIoN ATRIBUTOS
+    //declaracion atributo de clase constante entero que representa el codigo
     //de caracter del caracter espacio en blanco
     private static final int COD_ESPACIO=(int) ' ';
-    //declaración atributo de clase constante entero que representa el código
+    //declaracion atributo de clase constante entero que representa el codigo
     //del caracter de control RETURN
     private static final int RETURN=(int) '\r';
-    //declaración atributo de clase constante entero que representa el código
+    //declaracion atributo de clase constante entero que representa el codigo
     //del caracter de control SALTO DE LINEA
     private static final int SALTO_LINEA=(int) '\n';
-    //declaración atributo de objeto BufferedWriter que posibilite el enlace
+    //declaracion atributo de objeto BufferedWriter que posibilite el enlace
     //con el fichero de texto a nivel de escritura
     private BufferedWriter fichero=null;  
     
@@ -51,17 +51,17 @@ public class ParaulaFitxerEscritura {
         }
     }
     
-    //MÉTODO escrituraSeparador QUE LLEVA A CABO LA ESCRITURA DEL CÓDIGO
+    //MÉTODO escrituraSeparador QUE LLEVA A CABO LA ESCRITURA DEL CoDIGO
     //DE CARACTER DEL ESPACIO EN BLANCO EN EL FICHERO
     public void escrituraSeparador() throws Exception {
-        //escritura del código del espacio en blanco en el fichero
+        //escritura del codigo del espacio en blanco en el fichero
         fichero.write(COD_ESPACIO);
     }
     
-    //MÉTODO nuevaLinea QUE LLEVA A CABO LA CREACIÓN DE UNA NUEVA LINEA
+    //MÉTODO nuevaLinea QUE LLEVA A CABO LA CREACIoN DE UNA NUEVA LINEA
     //EN EL FICHERO
     //NOTA: SI TRABAJAMOS EN WINDOWS TENEMOS QUE TENER EN CUENTA QUE
-    //LA CREACIÓN DE UNA NUEVA LINEA EN UN FICHERO (NORMALMENTE SE LLAMA SALTO
+    //LA CREACIoN DE UNA NUEVA LINEA EN UN FICHERO (NORMALMENTE SE LLAMA SALTO
     //DE LINEA) ES NESARIO LLEVARLO A CABO CON LOS CARACTERES DE CONTROL
     //RETURN Y SALTO DE LINEA.
     //EN MAC O LINUX SOLO SERÍA NECEARIO EL CARACTER DE CONTROL SALTO DE LINEA

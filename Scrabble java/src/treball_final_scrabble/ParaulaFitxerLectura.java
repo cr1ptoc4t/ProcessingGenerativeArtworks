@@ -15,9 +15,9 @@ public class ParaulaFitxerLectura {
     private static final int COD_ESPAI=(int) ' ';
     //atribut de classe constant que representa el caracter de control return
     private static final int RETURN=(int) '\r';
-    //declaració atribut de classe que representa el codi del caracter TAB
+    //declaracio atribut de classe que representa el codi del caracter TAB
     private static final int TAB=(int) '	';    
-    //declaració atribut de classe que representa el codi del caracter bot de linia
+    //declaracio atribut de classe que representa el codi del caracter bot de linia
     private static final int BOT_LINEA=(int) '\n';
     //declaracio atribut d'objecte que representa el codi llegit del fitxer
     private int codi=COD_ESPAI;
@@ -37,10 +37,10 @@ public class ParaulaFitxerLectura {
     }
     //metode cercarParaula cerca si encara queden paraules per llegir
     private void cercarParaula() throws Exception {
-        //lectura desde el fichero mientras el código de caracter leido
+        //lectura desde el fichero mientras el codigo de caracter leido
         //sea igual al espacio en blanco
         while ((codi==COD_ESPAI)||(codi==RETURN)||(codi==BOT_LINEA)) {
-            //lectura siguiente código de caracter desde el fichero
+            //lectura siguiente codigo de caracter desde el fichero
             codi=fitxer.read();
         }
     }
