@@ -22,10 +22,9 @@ void draw(){
         n = i;
         iteracion=0;
         while (n!=1) {
-            graph();
-            mx = map(i, wGraph, width - wGraph*2, 0, 20);
-            my = map(n, wGraph, hGraph, 0, 180);
-            //dibuixar on se situa a tal iteracio
+            fill(255);
+            ellipse(wGraph+(width - 2*wGraph)*iteracion, hGraph+ (height-2*hGraph)*n,r,r);
+
             if(n%2==0){
                 n=n/2;
             }else{
@@ -58,6 +57,7 @@ void graph(){
             textSize(7); textAlign(LEFT);
             line(wGraph, hGraph - i* ((width-2*wGraph)/130),wGraph-5, hGraph - i* ((width-2*wGraph))/130);
             text(i, wGraph - 10, hGraph - i* ((width-2*wGraph)/130)+2);
+
             if(i<21){
                 textAlign(CENTER); textSize(15);
                 line(wGraph + i* ((height-2*wGraph)/20), hGraph ,wGraph + i* ((height-2*wGraph)/20), hGraph + 5);
