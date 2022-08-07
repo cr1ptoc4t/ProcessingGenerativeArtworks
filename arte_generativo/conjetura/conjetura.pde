@@ -50,9 +50,11 @@ void draw(){
 void graph(){
     pushStyle();
         stroke(255);
+        //se dibuixen es eixos x i y
         line(wGraph, hGraph, width- wGraph, hGraph);
         line(wGraph, hGraph, wGraph, wGraph);
         
+        //construcció de dades a sa pantalla
         for (int i=0; i<130; i++){
             textSize(7); textAlign(LEFT);
             line(wGraph, hGraph - i* ((width-2*wGraph)/130),wGraph-5, hGraph - i* ((width-2*wGraph))/130);
@@ -68,6 +70,7 @@ void graph(){
         textSize(15);
         textAlign(RIGHT);
         text("Iteración  ", width, height - wGraph/4);
+        //simplement se dibuixen ses etiquetes
         pushMatrix();
             float angle = radians(270);
             rotate(angle);
