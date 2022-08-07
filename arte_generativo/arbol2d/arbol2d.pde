@@ -11,7 +11,6 @@ void setup(){
 void draw(){
     rectMode(CENTER);
     arbol((float)width/2, (float)height/2);
-
 }
 
 void arbol(float x, float y){
@@ -21,7 +20,7 @@ void arbol(float x, float y){
     r = random(m-d, m+d);
     if(c>230){
         if(c==231){
-            background(130, 130,130, 200);
+            background(0,0,0);
         }
         fill(255,0,0);
         //stroke();
