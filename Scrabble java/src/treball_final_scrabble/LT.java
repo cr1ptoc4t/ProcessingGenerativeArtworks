@@ -1,4 +1,5 @@
 //Classe LT per a la entrada de dades desde teclat
+
 //Nom: Bernat Parera Servera
 package treball_final_scrabble; 
 
