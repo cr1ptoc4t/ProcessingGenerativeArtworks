@@ -34,7 +34,7 @@ void draw() {
 
 
 
-  background(160);
+  background(0);
   
   noFill();
 
