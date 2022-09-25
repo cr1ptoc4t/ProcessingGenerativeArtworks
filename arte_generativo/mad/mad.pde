@@ -3,8 +3,8 @@ int scl = 20;
 int w = 2000;
 int h = 1600;
 float rot = 0;
-float rot2=0;
-
+float rot2=PI/3;
+float c;
 float flying = 0;
 
 float[][] terrain;
@@ -45,12 +45,13 @@ void draw() {
   for (int y = 0; y < rows-1; y++) {
     beginShape(TRIANGLE_STRIP);
     for (int x = 0; x < cols; x++) {
-      stroke(random(0,100),random(0,100), random(230,255));
+      c = random(100,150);
+      stroke(c,c+50, random(230,255));
       vertex(x*scl, y*scl, terrain[x][y]);
-      vertex(x*scl, (y+1)*scl, terrain[x][y+1]);
+      vertex(x*scl, (y+1)*scl, terrain[x][y]);
     }
     endShape();
   }
-  rot+=PI/1000;
+  //rot+=PI/1000;
   rot2+=PI/1400;
 }
