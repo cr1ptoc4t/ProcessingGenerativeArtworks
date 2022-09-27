@@ -28,9 +28,10 @@ void draw() {
     float xoff = 0;
     for (int x = 0; x < cols; x++) {
       terrain[x][y] = map(noise(xoff, yoff), 0, 1, -100, 100);
-      xoff += 0.2;
+      xoff += map(mouseX, 0, width, 0.0001, 0.5);
     }
-    yoff += 0.2;
+    //yoff += map(mouseY, 0, height, 0.0001, 0.5);
+    yoff +=0.2;
   }
 
 
@@ -47,14 +48,14 @@ void draw() {
     beginShape(TRIANGLE_STRIP);
     for (int x = 0; x < cols; x++) {
       c = random(100,170);
-      stroke(terrain[x][y]*5, terrain[x][y]*5, (frameCount/10), frameCount/3);
+      stroke(map(x, 0, cols, 0, 255), map(y, 0, rows, 0, 255), terrain[x][y]*5 /* , frameCount */);
       vertex(x*scl, (y)*scl, terrain[x][y]);
       vertex(x*scl, (y+1)*scl, terrain[x][y+1]);
     }
     endShape();
   }
   //rot+=PI/1000;
-  //rot2+=PI/1400;
+  rot2+=map(mouseY, 0, height, PI/1400, PI/100);
   //rot3+=PI/1300;
 }
 
