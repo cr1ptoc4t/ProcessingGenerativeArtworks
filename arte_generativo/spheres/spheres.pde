@@ -39,5 +39,5 @@ void esfera(float x, float y, float r, int i){
 
     popMatrix();
     a+=mouseY;
-    println("valor de a: "+ a+ "\t Mouse Y: "+ mouseY);
+    //println("valor de a: "+ a+ "\t Mouse Y: "+ mouseY);
 }

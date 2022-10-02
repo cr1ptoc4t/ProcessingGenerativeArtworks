@@ -19,8 +19,8 @@ se simulan unas ciertas montañas las cuales su valor oscila entre -100 y 100.
 Destaca también el uso de colores en rgb, los cuales dependen unicamente de la posición de la
 linea a dibujar, RGB:(eje x, eje y, altura)
 
-Finalmente, destacar la extensibilidad que tiene el programa, puesto que dispone de un método propio
-
+Finalmente, destacar la extensibilidad que tiene el programa, puesto que dispone de un método
+propio para crear ciertos replanos
 
 ********************************************** PARA MI **********************************************
 
