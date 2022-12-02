@@ -1,6 +1,9 @@
 
 
 int f;
+float altura=0;
+float a=25;
+
 void setup() {
   size(1000,1000, P3D);
   background(10, 10, 30);
@@ -17,11 +20,13 @@ void draw() {
 
   for(float j= 30; j< height; j+=dif){
     for(float i=30; i< width; i+=dif){
-      edificio(random(i, i+ dif/2), random(j, j+dif/2), random(100, 150), random(20, 60), random(20,30), (int)random(10,100), (int)random(0,255), (int)random(0,255), (int)random(0,255));
+      edificio(random(i, i+ dif/2), altura + j+ random(0, dif/2), random(100, 150), random(20, 60), a, (int)random(10,100), (int)random(0,255), (int)random(0,255), (int)random(0,255));
     }
   }
+  //altura+=20;
   delay(500);
   f+=5;
+  println("a: " + a);
 }
 
 
@@ -58,6 +63,12 @@ void edificio(float x, float y, float w, float h, float h2, int n, int c1, int c
  void keyPressed() {
    if(key=='1'){
      noLoop();
+   }
+
+   if(key=='W'||key=='w' ){
+     a++;
+   } if(key=='S'|| key=='s'){
+     a--;
    }
   
 }
