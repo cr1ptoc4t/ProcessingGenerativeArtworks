@@ -3,8 +3,8 @@
 
 RainSystem rs; // Downpour
 SplashSystem ss; // Droplet hits the ground, and splashed 
-PVector gravity = new PVector(0, -0.59, 0);
-PVector sgravity = new PVector(0, 0.59, 0);
+PVector gravity = new PVector(0, 0.59, 0);
+PVector sgravity = new PVector(0, -0.59, 0);
 
 void setup() {
   fullScreen(P3D);
