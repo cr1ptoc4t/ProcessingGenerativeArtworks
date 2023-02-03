@@ -48,7 +48,7 @@ float[][] terrain;
 
 void setup() {
   size(600, 600, P3D);
-  fullScreen();
+  fullScreen(P3D);
   cols = w / scl;
   rows = h/ scl;
   terrain = new float[cols][rows];
@@ -69,7 +69,6 @@ void draw() {
     //yoff += map(mouseY, 0, height, 0.0001, 0.5);
     yoff +=0.2;
   }
-
 
   background(2);
   
