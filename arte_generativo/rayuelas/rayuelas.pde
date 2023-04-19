@@ -12,6 +12,7 @@ int a = 0;
 int b=width;
 float wSqrt = 100;
 int intensity = 0;
+int s=0;
 
 void setup() {
     fullScreen();
@@ -19,6 +20,8 @@ void setup() {
 }
 
 void draw(){
+
+    rotate(s);
     wSqrt = map(mouseY, 0, height, 100, 500);
     background(240+random(-20,20) - intensity,160+random(-20,20)- intensity, 240+random(-20,20)- intensity);
     if(a==width){
@@ -34,6 +37,7 @@ void draw(){
         }
     }
     intensity+=10;
+    s+=PI/4;
 }
 
 

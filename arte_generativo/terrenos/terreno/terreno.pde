@@ -47,8 +47,8 @@ float flying = 0;
 float[][] terrain;
 
 void setup() {
-  size(600, 600, P3D);
-  fullScreen();
+  size(1200, 900, P3D);
+  //fullScreen();
   cols = w / scl;
   rows = h/ scl;
   terrain = new float[cols][rows];
