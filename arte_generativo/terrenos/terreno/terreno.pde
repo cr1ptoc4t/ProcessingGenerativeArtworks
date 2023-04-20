@@ -56,7 +56,7 @@ void setup() {
 
 
 void draw() {
-
+  background(120);
   flying -= 0.1;
 
   float yoff = flying;
@@ -71,7 +71,7 @@ void draw() {
   }
 
 
-  background(2);
+  background(120);
   
   noFill();
 
